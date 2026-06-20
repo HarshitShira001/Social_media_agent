@@ -1,0 +1,87 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ─── Dependencies ───────────────────────────────────────────────────────────────
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ─── Next.js ────────────────────────────────────────────────────────────────────
+/.next/
+/out/
+/build
+
+# ─── TypeScript ─────────────────────────────────────────────────────────────────
+*.tsbuildinfo
+next-env.d.ts
+
+# ─── Testing & Coverage ─────────────────────────────────────────────────────────
+/coverage
+/.nyc_output
+
+# ─── Environment & Secrets ──────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# ─── Clerk ──────────────────────────────────────────────────────────────────────
+# Clerk local config may contain sensitive keys
+/.clerk/
+
+# ─── Inngest ────────────────────────────────────────────────────────────────────
+# Local Inngest dev server data
+/.inngest/
+
+# ─── Vercel ─────────────────────────────────────────────────────────────────────
+.vercel
+
+# ─── Debug Logs ─────────────────────────────────────────────────────────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# ─── OS Files ───────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ─── Editor & IDE ───────────────────────────────────────────────────────────────
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ─── Certificates & Keys ────────────────────────────────────────────────────────
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ─── AI Agent / Coding Assistant Configs ────────────────────────────────────────
+.insforge
+.agent
+.agents
+.augment
+.claude
+.cline
+.github/copilot*
+.kilocode
+.qoder
+.qwen
+.roo
+.trae
+.windsurf
+.gemini
